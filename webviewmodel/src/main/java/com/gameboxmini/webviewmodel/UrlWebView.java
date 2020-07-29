@@ -40,9 +40,13 @@ public class UrlWebView {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                 webSettings.setDisplayZoomControls(false);
             }
-            webSettings.setBuiltInZoomControls(true);
-            webSettings.setSupportZoom(true);
+            webSettings.setBuiltInZoomControls(false);
+            webSettings.setSupportZoom(false);
             webSettings.setDomStorageEnabled(true);
+            webSettings.setLoadWithOverviewMode(true);
+            webSettings.setUseWideViewPort(true);
+            mWebView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
+            mWebView.setScrollbarFadingEnabled(true);
         }
     }
 }
