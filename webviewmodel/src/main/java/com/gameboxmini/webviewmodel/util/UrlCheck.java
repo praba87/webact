@@ -21,6 +21,7 @@ public class UrlCheck {
     private static final Set<String> AD_HOSTS = new HashSet<>();
 
     public static void init(final Context context) {
+        System.out.println("AsyncTask");
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... params) {
