@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         webView = findViewById(R.id.webView);
         new UrlWebView.init(this).initializeWebView(webView);
         webView.setWebViewClient(new Browser_home());
-        webView.loadUrl("https://www.google.com/");
+        webView.loadUrl("https://www.monstertechnocodes.com/");
     }
 
     private class Browser_home extends WebViewClient {

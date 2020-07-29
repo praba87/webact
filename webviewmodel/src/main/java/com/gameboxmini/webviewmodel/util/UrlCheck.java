@@ -36,6 +36,7 @@ public class UrlCheck {
 
     @WorkerThread
     private static void loadFromAssets(Context context) throws IOException {
+        System.out.println("adsssssssssssssssssssssss");
         InputStream stream = context.getAssets().open(AD_HOSTS_FILE);
         InputStreamReader inputStreamReader = new InputStreamReader(stream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
