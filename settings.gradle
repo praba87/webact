@@ -1,0 +1,3 @@
+include ':webviewmodel'
+include ':app'
+rootProject.name = "Webact"
