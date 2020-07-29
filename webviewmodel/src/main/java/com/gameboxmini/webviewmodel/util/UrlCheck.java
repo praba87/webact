@@ -17,7 +17,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UrlCheck {
-    private static final String AD_HOSTS_FILE = "hosts";
+    private static final String AD_HOSTS_FILE = "Urls";
     private static final Set<String> AD_HOSTS = new HashSet<>();
 
     public static void init(final Context context) {
