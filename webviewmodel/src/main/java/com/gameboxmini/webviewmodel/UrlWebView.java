@@ -5,8 +5,6 @@ import android.os.Build;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.gameboxmini.webviewmodel.util.UrlCheck;
-
 import java.util.HashMap;
 import java.util.Map;
 

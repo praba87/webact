@@ -8,9 +8,8 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.gameboxmini.webviewmodel.ToasterMessage;
 import com.gameboxmini.webviewmodel.UrlWebView;
-import com.gameboxmini.webviewmodel.util.UrlCheck;
+import com.gameboxmini.webviewmodel.UrlCheck;
 
 public class MainActivity extends AppCompatActivity {
 

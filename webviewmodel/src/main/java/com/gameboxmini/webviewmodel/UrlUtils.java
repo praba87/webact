@@ -1,4 +1,4 @@
-package com.gameboxmini.webviewmodel.util;
+package com.gameboxmini.webviewmodel;
 
 import java.net.MalformedURLException;
 import java.net.URL;

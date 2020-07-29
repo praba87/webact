@@ -1,4 +1,4 @@
-package com.gameboxmini.webviewmodel.util;
+package com.gameboxmini.webviewmodel;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -68,6 +68,7 @@ public class UrlCheck {
     }
 
     public static WebResourceResponse createEmptyResource() {
+        System.out.println("mmmmmmmmmmmmmmmmmmmm");
         return new WebResourceResponse("text/plain", "utf-8", new ByteArrayInputStream("".getBytes()));
     }
 }
