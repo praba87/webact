@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onPageFinished(WebView view, String url) {
-            System.out.println("welcome");
             super.onPageFinished(view, url);
         }
 

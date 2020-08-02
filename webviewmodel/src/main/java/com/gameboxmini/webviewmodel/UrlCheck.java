@@ -21,7 +21,7 @@ public class UrlCheck {
     private static final Set<String> AD_HOSTS = new HashSet<>();
 
     public static void init(final Context context) {
-        System.out.println("AsyncTask");
+
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... params) {
@@ -37,7 +37,6 @@ public class UrlCheck {
 
     @WorkerThread
     private static void loadFromAssets(Context context) throws IOException {
-        System.out.println("adsssssssssssssssssssssss");
         InputStream stream = context.getAssets().open(AD_HOSTS_FILE);
         InputStreamReader inputStreamReader = new InputStreamReader(stream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);

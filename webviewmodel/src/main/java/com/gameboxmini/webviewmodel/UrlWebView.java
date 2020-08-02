@@ -1,7 +1,9 @@
 package com.gameboxmini.webviewmodel;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
+import android.webkit.CookieManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
@@ -30,14 +32,12 @@ public class UrlWebView {
             this.context = context;
         }
 
+        @SuppressLint("SetJavaScriptEnabled")
         public void initializeWebView(WebView mWebView) {
             WebSettings webSettings = mWebView.getSettings();
             webSettings.setJavaScriptEnabled(true);
-            mWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
             webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-                webSettings.setDisplayZoomControls(false);
-            }
+            webSettings.setDisplayZoomControls(false);
             webSettings.setBuiltInZoomControls(false);
             webSettings.setSupportZoom(false);
             webSettings.setDomStorageEnabled(true);
@@ -45,6 +45,9 @@ public class UrlWebView {
             webSettings.setUseWideViewPort(true);
             mWebView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
             mWebView.setScrollbarFadingEnabled(true);
+            webSettings.setAppCacheEnabled(true);
+            webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+            CookieManager.getInstance().setAcceptCookie(true);
         }
     }
 }
